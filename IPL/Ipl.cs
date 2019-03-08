@@ -967,22 +967,37 @@ namespace IPL
                 }
                 if (ipl.name != "Bunker Interior")
                 {
-                    //var blip = AddBlipForCoord(ipl.location.X, ipl.location.Y, ipl.location.Z);
-                    //SetBlipSprite(blip, (int)ipl.sprite);
-                    //BeginTextCommandSetBlipName("STRING");
-                    //AddTextComponentString(ipl.name);
-                    //EndTextCommandSetBlipName(blip);
-                    //SetBlipAsShortRange(blip, true);
-                    if (ipl.name == "Bunker")
+                    var blip = AddBlipForCoord(ipl.location.X, ipl.location.Y, ipl.location.Z);
+                    SetBlipSprite(blip, (int)ipl.sprite);
+                    BeginTextCommandSetBlipName("STRING");
+                    AddTextComponentString(ipl.name);
+                    EndTextCommandSetBlipName(blip);
+                    SetBlipAsShortRange(blip, true);
+                    if (ipl.name == "FIB")
+                    {
+                        CreateTeleport(ipl.location, new Vector3(136.0263f, -761.5449f, 242.1519f));
+                    }
+                    else if (ipl.name == "Morgue")
+                    {
+                        CreateTeleport(ipl.location, new Vector3(254.0815f, -1372.7699f, 24.5378f));
+                    }
+                    else if (ipl.name == "Bahama Mamas")
+                    {
+                        CreateTeleport(ipl.location, new Vector3(-1387.8235f, -587.9884f, 30.3195f));
+                    }
+                    else if (ipl.name == "Bunker")
                     {
                         CreateTeleport(ipl.location, new Vector3(892.6384f, -3245.8664f, -98.2645f));
                     }
                     else if (ipl.name == "Aircraft Hangar")
                     {
                         CreateTeleport(ipl.location, new Vector3(-1267.2f, -2970.02f, -48.49f));
-
                     }
-                    ////{"name": "Example Blip","coordinates": {"x": 472.94,"y": -3035.96,"z": 6.2},"spriteID": 1,"color": 1}
+                    else if (ipl.name == "Arena")
+                    {
+                        CreateTeleport(ipl.location, new Vector3(2853.5459f, -3901.417f, 140.0009f));
+                    }
+                    //{"name": "Example Blip","coordinates": {"x": 472.94,"y": -3035.96,"z": 6.2},"spriteID": 1,"color": 1}
                     //Debug.Write("{" + $"\"name\":\"{ipl.name}\",\"coordinates\":" + "{" + $"\"x\":{ipl.location.X}, \"y\":{ipl.location.Y},\"z\":{ipl.location.Z}" + "}, \"spriteID\":" + ((int)ipl.sprite).ToString() + ",\"color\":1},\n");
                 }
                 else
