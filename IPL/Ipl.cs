@@ -333,7 +333,7 @@ namespace IPL
             {
                 name = "FIB",
                 sprite = BlipIcon.CeoOffice,
-                location = new Vector3(105.4557f, -745.4835f, 44.7548f),
+                location = new Vector3(135.9655f,-761.7395f,45.7458f),
                 interiorVariants = new Dictionary<string, List<string>>()
                 {
                     ["default"] = new List<string>() { "FIBlobby" },
