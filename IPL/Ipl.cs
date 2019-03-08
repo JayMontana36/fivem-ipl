@@ -303,7 +303,7 @@ namespace IPL
             {
                 name = "Morgue",
                 sprite = BlipIcon.Dead,
-                location = new Vector3(239.75195f, -1360.64965f, 39.53437f),
+                location = new Vector3(240.6211f,-1379.5691f,33.7418f),
                 interiorVariants = new Dictionary<string, List<string>>()
                 {
                     ["default"] = new List<string>() { "Coroner_Int_on", "coronertrash" },
