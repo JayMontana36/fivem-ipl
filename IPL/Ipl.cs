@@ -1160,6 +1160,7 @@ namespace IPL
             foreach (KeyValuePair<Vector3, Vector3> tp in teleports)
             {
                 DrawMarker(1, tp.Key.X, tp.Key.Y, tp.Key.Z - 1f, 0f, 0f, 0f, 0f, 0f, 0f, 1.5f, 1.5f, 1f, 250, 220, 60, 100, false, false, 0, false, null, null, false);
+                DrawMarker(1, tp.Value.X, tp.Value.Y, tp.Value.Z - 1f, 0f, 0f, 0f, 0f, 0f, 0f, 1.5f, 1.5f, 1f, 250, 220, 60, 100, false, false, 0, false, null, null, false);
                 var pos = GetEntityCoords(PlayerPedId(), true);
                 var target = tp.Key;
                 var targetInt = tp.Value;
