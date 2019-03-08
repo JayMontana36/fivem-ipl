@@ -36,5 +36,7 @@ None :)
 ### Credits
 All credit goes to TomGrobbe.. All I did was add more teleport locations and a few changes. I will also be maintaining this project to be open interiors and not an IPL system.
 
+Credit to [itsJarrett](https://github.com/itsJarrett) for the initial code on the release.
+
 ### License
-Do not rerelease this project without my written permission. Copyright shared by TomGrobbe and mbergwall2222. All credit to TomGrobbe for his resource but all additions are property of mbergwall2222. 
+Do not rerelease this project without my written permission. Copyright shared by TomGrobbe and mbergwall2222. Initial code owned by itsJarrett. All credit to TomGrobbe for his resource but all additions are property of mbergwall2222.
