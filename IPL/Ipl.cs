@@ -664,7 +664,7 @@ namespace IPL
             {
                 name = "Bahama Mamas",
                 sprite = BlipIcon.Cocktail,
-                location = new Vector3(-1388.0013f, -618.41967f, 30.819599f),
+                location = new Vector3(-1389.1504f,-585.8087f,30.2204f),
                 interiorVariants = new Dictionary<string, List<string>>()
                 {
                     ["default"] = new List<string>() { "hei_sm_16_interior_v_bahama_milo_" }
