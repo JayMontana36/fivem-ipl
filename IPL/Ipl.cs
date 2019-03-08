@@ -880,6 +880,7 @@ namespace IPL
                 "xm_hatches_terrain_lod",
                 "xm_mpchristmasadditions",
                 "xm_siloentranceclosed_x17",
+                "xs_arena_interior"
             };
 
             foreach (string dlcipl in dlcIpls)
