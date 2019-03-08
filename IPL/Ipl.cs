@@ -238,6 +238,16 @@ namespace IPL
         {
             #region add IPLs to list
             ipls.Add(new IPL()
+301	        {
+302	                name = "Arena",
+303	                sprite = BlipIcon.MissionStar,
+304	                location = new Vector3(-282.8151f,-1919.7954f,29.946f),
+305	                interiorVariants = new Dictionary<string, List<string>>()
+306	                {
+307	                    ["default"] = new List<string>() { "xs_arena_interior" },
+308	                }
+309	         });
+            ipls.Add(new IPL()
             {
                 name = "Simeon's Showroom",
                 sprite = BlipIcon.GarageBlack,
