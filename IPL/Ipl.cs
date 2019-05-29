@@ -237,16 +237,16 @@ namespace IPL
         public Ipl()
         {
             #region add IPLs to list
-            ipls.Add(new IPL()
-            {
-                name = "Arena",
-                sprite = BlipIcon.MissionStar,
-                location = new Vector3(-282.8151f, -1919.7954f, 29.946f),
-                interiorVariants = new Dictionary<string, List<string>>()
-                {
-                    ["default"] = new List<string>() { "xs_arena_interior" },
-                },
-            });
+//            ipls.Add(new IPL()
+//            {
+//                name = "Arena",
+//                sprite = BlipIcon.MissionStar,
+//                location = new Vector3(-282.8151f, -1919.7954f, 29.946f),
+//                interiorVariants = new Dictionary<string, List<string>>()
+//                {
+//                    ["default"] = new List<string>() { "xs_arena_interior" },
+//                },
+//            });
             ipls.Add(new IPL()
             {
                 name = "Simeon's Showroom",
@@ -826,6 +826,7 @@ namespace IPL
             #region latest DLC IPLs (exact location per ipl is unknown)
             List<string> dlcIpls = new List<string>()
             {
+//                "xs_arena_interior"
                 "xm_x17dlc_int_placement",
                 "xm_x17dlc_int_placement_interior_0_x17dlc_int_base_ent_milo_",
                 "xm_x17dlc_int_placement_interior_10_x17dlc_int_tun_straight_milo_",
@@ -879,8 +880,7 @@ namespace IPL
                 "xm_hatches_terrain",
                 "xm_hatches_terrain_lod",
                 "xm_mpchristmasadditions",
-                "xm_siloentranceclosed_x17",
-                "xs_arena_interior"
+                "xm_siloentranceclosed_x17"
             };
 
             foreach (string dlcipl in dlcIpls)
@@ -993,10 +993,10 @@ namespace IPL
                     {
                         CreateTeleport(ipl.location, new Vector3(-1267.2f, -2970.02f, -48.49f));
                     }
-                    else if (ipl.name == "Arena")
-                    {
-                        CreateTeleport(ipl.location, new Vector3(2853.5459f, -3901.417f, 140.0009f));
-                    }
+//                    else if (ipl.name == "Arena")
+//                    {
+//                        CreateTeleport(ipl.location, new Vector3(2853.5459f, -3901.417f, 140.0009f));
+//                    }
                     //{"name": "Example Blip","coordinates": {"x": 472.94,"y": -3035.96,"z": 6.2},"spriteID": 1,"color": 1}
                     //Debug.Write("{" + $"\"name\":\"{ipl.name}\",\"coordinates\":" + "{" + $"\"x\":{ipl.location.X}, \"y\":{ipl.location.Y},\"z\":{ipl.location.Z}" + "}, \"spriteID\":" + ((int)ipl.sprite).ToString() + ",\"color\":1},\n");
                 }
